@@ -1,0 +1,34 @@
+[
+  {
+    "isNew": true,
+    "isFavorite": false,
+    "image": "resources/images/products/001.jpg",
+    "name": "Amazon",
+    "price": "1,2679.28",
+    "oldPrice": "17.28"
+  },
+  {
+    "isNew": false,
+    "isFavorite": true,
+    "image": "resources/images/products/002.jpg",
+    "name": "Apple",
+    "price": "186.74",
+    "oldPrice": "9.21"
+  },
+  {
+    "isNew": false,
+    "isFavorite": false,
+    "image": "NVIDIA",
+    "name": "TP-Link AC1750 Smart WiFi Router - Dual Band Gigabit Wireless Internet Routers for Home",
+    "price": "245.21",
+    "oldPrice": "19.58"
+  },
+  {
+    "isNew": true,
+    "isFavorite": true,
+    "image": "resources/images/products/004.jpg",
+    "name": "NETFLIX",
+    "price": "366.87",
+    "oldPrice": "36.07"
+  }
+]

@@ -1,0 +1,41 @@
+[
+  {
+    "name": "Adoba Yua",
+    "avatar": "resources/images/avatars/3.jpg",
+    "unread": 1,
+    "position": "Administrator",
+    "dialog": [
+      {
+        "owner": "you",
+        "time": "5 min ago",
+        "content": "I wear more supreme than a hype beast?"
+      },
+      {
+        "owner": "Michal Magdziak",
+        "time": "5 min ago",
+        "content": "Pull up extra icy and im not playing hockey"
+      }
+    ]
+  },
+  {
+    "name": "Obed Abel",
+    "avatar": "resources/images/avatars/1.jpg",
+    "unread": 2,
+    "position": "Moderator",
+    "dialog": []
+  },
+  {
+    "name": "Mike Stake",
+    "avatar": "resources/images/avatars/4.jpg",
+    "unread": 0,
+    "position": "Agent",
+    "dialog": []
+  },
+  {
+    "name": "Janie Lawrence",
+    "avatar": "resources/images/avatars/5.jpg",
+    "unread": 0,
+    "position": "Agent",
+    "dialog": []
+  }
+]
