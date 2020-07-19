@@ -27,7 +27,7 @@ class AntdMenuExample extends React.Component {
               title={
                 <span>
                   <MailOutlined />
-                  <span>Optimizer</span>
+                  <span>Portfolio Optimizer</span>
                 </span>
               }
             >
@@ -45,7 +45,7 @@ class AntdMenuExample extends React.Component {
               title={
                 <span>
                   <AppstoreOutlined />
-                  <span>Restructure</span>
+                  <span>Portfolio Shuffle</span>
                 </span>
               }
             >
@@ -61,7 +61,7 @@ class AntdMenuExample extends React.Component {
               title={
                 <span>
                   <SettingOutlined />
-                  <span>Back-Test</span>
+                  <span>Portfolio Back-Test</span>
                 </span>
               }
             >

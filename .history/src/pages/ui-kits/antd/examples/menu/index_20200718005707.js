@@ -20,14 +20,20 @@ class AntdMenuExample extends React.Component {
   render() {
     return (
       <div>
+        <h5 className="mb-3">
+          <strong>Horizontal</strong>
+        </h5>
+        <h5 className="mb-3">
+          <strong>Vertical</strong>
+        </h5>
         <div className="mb-5">
-          <Menu onClick={this.handleClick} style={{ width: 150 }} mode="vertical">
+          <Menu onClick={this.handleClick} style={{ width: 256 }} mode="vertical">
             <SubMenu
               key="sub1"
               title={
                 <span>
                   <MailOutlined />
-                  <span>Optimizer</span>
+                  <span>Navigation One</span>
                 </span>
               }
             >
@@ -45,7 +51,7 @@ class AntdMenuExample extends React.Component {
               title={
                 <span>
                   <AppstoreOutlined />
-                  <span>Restructure</span>
+                  <span>Navigation Two</span>
                 </span>
               }
             >
@@ -61,7 +67,7 @@ class AntdMenuExample extends React.Component {
               title={
                 <span>
                   <SettingOutlined />
-                  <span>Back-Test</span>
+                  <span>Navigation Three</span>
                 </span>
               }
             >

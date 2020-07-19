@@ -1,18 +1,12 @@
 import React, { useState, useEffect } from 'react'
-import { Spin, Alert, Table, Select, Tag, Radio, Input, Affix, Form, Rate,Modal,Button,Typography,} from 'antd'
+import { Spin, Alert, Table, Select, Tag, Radio, Input, Affix, Form } from 'antd'
 import { Helmet } from 'react-helmet'
-import ChartistGraph from 'react-chartist'
-import ChartistTooltip from 'chartist-plugin-tooltips-updated'
-import AntdMenuExample from 'pages/ui-kits/antd/examples/menu'
-import { ExclamationCircleOutlined,UpCircleTwoTone  } from '@ant-design/icons';
 import TradeChart from './TradeChart'
 import getData from './TradeChart/utils'
 import styles from './style.module.scss'
 import { myOpenOrdersData, marketHistoryData, orderBookBuy, orderBookSell } from './data.json'
 
-const { Title, Text,} = Typography;
 const DashboardCrypto = () => {
-
   const [myOpenOrdersLoading, setMyOpenOrdersLoading] = useState(false)
   const [myOpenOrdersLoaded, setMyOpenOrdersLoaded] = useState(false)
   const [myOrderHistoryLoading, setMyOrderHistoryLoading] = useState(false)
@@ -26,147 +20,6 @@ const DashboardCrypto = () => {
       setGraphData(data)
     })
   }, [])
-
-  const animationData = {
-    labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
-    series: [
-      [1, 2, 2.7, 0, 3, 5, 3, 4, 8, 10, 12, 7],
-      [0, 1.2, 2, 7, 2.5, 9, 5, 8, 9, 11, 14, 4],
-      [10, 9, 8, 6.5, 6.8, 6, 5.4, 5.3, 4.5, 4.4, 3, 2.8],
-    ],
-  }
-
-  function showConfirm() {
-    confirm({
-      title: 'Are you sure you want to purchase 25 shares of Apple??',
-      icon: <ExclamationCircleOutlined />,
-      content: 'Apple Price : $398.21',
-      onOk() {
-        console.log('OK');
-      },
-      onCancel() {
-        console.log('Cancel');
-      },
-    });
-  }
-
-  const { confirm } = Modal
-
-  const smilData = {
-    labels: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
-    series: [
-      [12, 9, 7, 8, 5, 4, 6, 2, 3, 3, 4, 6],
-      [4, 5, 3, 7, 3, 5, 5, 3, 4, 4, 5, 5],
-      [5, 3, 4, 5, 6, 3, 3, 4, 5, 6, 3, 4],
-      [3, 4, 5, 6, 7, 6, 4, 5, 6, 7, 6, 3],
-    ],
-  }
-  
-  const smilOptions = {
-    low: 0,
-    plugins: [ChartistTooltip({ anchorToPoint: false, appendToBody: true, seriesName: false })],
-    seq: 0,
-  }
-  
-  const smilListener = {
-    created() {
-      smilOptions.seq = 0
-    },
-    draw(data) {
-      const delays = 80
-      const durations = 500
-  
-      if (data.type === 'line') {
-        smilOptions.seq += 1
-        data.element.animate({
-          opacity: {
-            begin: smilOptions.seq * delays + 1e3,
-            dur: durations,
-            from: 0,
-            to: 1,
-          },
-        })
-      } else if (data.type === 'label' && data.axis === 'x')
-        data.element.animate({
-          y: {
-            begin: smilOptions.seq * delays,
-            dur: durations,
-            from: data.y + 100,
-            to: data.y,
-            easing: 'easeOutQuart',
-          },
-        })
-      else if (data.type === 'label' && data.axis === 'y')
-        data.element.animate({
-          x: {
-            begin: smilOptions.seq * delays,
-            dur: durations,
-            from: data.x - 100,
-            to: data.x,
-            easing: 'easeOutQuart',
-          },
-        })
-      else if (data.type === 'point')
-        data.element.animate({
-          x1: {
-            begin: smilOptions.seq * delays,
-            dur: durations,
-            from: data.x - 10,
-            to: data.x,
-            easing: 'easeOutQuart',
-          },
-          x2: {
-            begin: smilOptions.seq * delays,
-            dur: durations,
-            from: data.x - 10,
-            to: data.x,
-            easing: 'easeOutQuart',
-          },
-          opacity: {
-            begin: smilOptions.seq * delays,
-            dur: durations,
-            from: 0,
-            to: 1,
-            easing: 'easeOutQuart',
-          },
-        })
-      else if (data.type === 'grid') {
-        const pos1Animation = {
-          begin: smilOptions.seq * delays,
-          dur: durations,
-          from: data[`${data.axis.units.pos}1`] - 30,
-          to: data[`${data.axis.units.pos}1`],
-          easing: 'easeOutQuart',
-        }
-        const pos2Animation = {
-          begin: smilOptions.seq * delays,
-          dur: durations,
-          from: data[`${data.axis.units.pos}2`] - 100,
-          to: data[`${data.axis.units.pos}2`],
-          easing: 'easeOutQuart',
-        }
-        const ctAnimations = {}
-        ctAnimations[`${data.axis.units.pos}1`] = pos1Animation
-        ctAnimations[`${data.axis.units.pos}2`] = pos2Animation
-        ctAnimations.opacity = {
-          begin: smilOptions.seq * delays,
-          dur: durations,
-          from: 0,
-          to: 1,
-          easing: 'easeOutQuart',
-        }
-        data.element.animate(ctAnimations)
-      }
-    },
-  }
-  
-  const animatonOptions = {
-    axisX: {
-      labelInterpolationFnc(value, index) {
-        return index % 2 !== 0 ? !1 : value
-      },
-    },
-  }
 
   const handleMyOpenOrders = e => {
     e.preventDefault()
@@ -488,21 +341,8 @@ const DashboardCrypto = () => {
                 91.03
               </span>
             </a>
-            <div className="mb-3">
-              <Rate defaultValue={3} />
-            </div>
-            <h5 className="mb-3">
-              <strong>Quick Tools</strong>
-            </h5>
-            <div className="card">
-              <AntdMenuExample />
-            </div>
-            
-          </Affix>     
+          </Affix>
         </div>
-          
-
-        
         <div className={styles.content}>
           <div className="cui__utils__heading">
             <strong>Portfolio Simulation</strong>
@@ -518,102 +358,34 @@ const DashboardCrypto = () => {
 
           <div className="row mb-3">
             <div className="card .col-md1" style={{width: 300, marginLeft:50, backgroundColor:"#96ceb4"}}>
-              <div className="fnt-size-36 font-weight-bold text-dark mb-n2" style={{ height: 45,marginLeft:120, }}>
+              <div className="fnt-size-36 font-weight-bold text-dark mb-n2" style={{ height: 45 }}>
                 $3,186
               </div>
-              <div className="text-upercase" style={{marginLeft:70}}>
+              <div className="text-upercase">
                 Expected Earnings (Today)
               </div>
             </div>
             <div className="card .col-md1" style={{width: 300, marginLeft:50, backgroundColor:"#88d8b0"}}>
-              <div className="fnt-size-36 font-weight-bold text-dark mb-n2" style={{ height: 45,marginLeft:120, }}>
+              <div className="fnt-size-36 font-weight-bold text-dark mb-n2" style={{ height: 45 }}>
                 +$11,980
               </div>
-              <div className="text-upercase" style={{marginLeft:70}}>
+              <div className="text-upercase">
                 Expected Earnings (Tomorrow)
               </div>
             </div>
-            <div className="card .col-md1" style={{width: 300, marginLeft:50, backgroundColor:"#ff6f69"}}>
-              <div className="fnt-size-36 font-weight-bold text-dark mb-n2" style={{ height: 45, marginLeft:120, color:"#ffa39e" }}>
-                -$86,081
+          </div>
+          <div className="card .col-md1" style={{width: 300, marginLeft:50, backgroundColor:"#88d8b0"}}>
+              <div className="fnt-size-36 font-weight-bold text-dark mb-n2" style={{ height: 45 }}>
+                -$87,341
               </div>
-              <div className="text-upercase" style={{marginLeft:70}}>
+              <div className="text-upercase">
                 Expected Earnings (Month)
               </div>
             </div>
           </div>
 
-
-
-          
-
-          
-            
           <div className="cui__utils__heading">
-            <strong>Portfolio Sentiments</strong>
-          </div>
-          <div className="row mb-3">
-          
-            <div className="card mb-3" style={{width: 290, height:80, marginLeft:50, backgroundColor:"#00acee"}}>
-              <Title level={4} style={{marginLeft:15, size:'5', color:'#fffbe6'}}>Twitter</Title>
-              <UpCircleTwoTone twoToneColor="#01A690" style={{marginLeft:225, marginTop:-35, width:40, fontSize:'22px'}} />
-              <Text type="primary" style={{marginLeft:175, marginTop:-23,  fontSize:'15px', color:'#fffbe6'}}>2.86%</Text>
-              <Text type="primary" style={{marginLeft:175, marginTop:5,  fontSize:'15px', color:'#fffbe6'}}>Sentiment Score</Text>
-              <Text type="primary" style={{marginLeft:15, marginTop:-23,  fontSize:'15px', color:'#fffbe6'}}>$37.98</Text>
-            </div>
-            <div className="card mb-3" style={{width: 290, height:80, marginLeft:50, backgroundColor:"#3b5998"}}>
-              <Title level={4} style={{marginLeft:15, size:'5', color:'#fffbe6'}}>Facebook</Title>
-              <UpCircleTwoTone twoToneColor="#01A690" style={{marginLeft:225, marginTop:-35, width:40, fontSize:'22px'}} />
-              <Text type="primary" style={{marginLeft:175, marginTop:-23,  fontSize:'15px', color:'#fffbe6'}}>2.86%</Text>
-              <Text type="primary" style={{marginLeft:175, marginTop:5,  fontSize:'15px', color:'#fffbe6'}}>Sentiment Score</Text>
-              <Text type="primary" style={{marginLeft:15, marginTop:-23,  fontSize:'15px', color:'#fffbe6'}}>$37.98</Text>
-
-            </div>
-            <div className="card mb-3" style={{width: 290, height:80, marginLeft:50, backgroundColor:"#00acee"}}>
-              <Title level={4} style={{marginLeft:85, color:'#fffbe6'}}>News</Title>
-            </div>
-            <div className="card mb-3" style={{width: 290, height:80, marginLeft:50, backgroundColor:"#d9d9d9"}}>
-              <Title level={4} style={{marginLeft:85, color:'#fffbe6'}}>Reddit</Title>
-            </div>
-          </div>
-          
-          <div className="cui__utils__heading">
-            <strong>Portfolio Charts</strong>
-          </div>
-          <div className="row mb-3">
-            <div className="mb-5">
-              <ChartistGraph
-                className="height-300 chart-css-animations chartist-theme-dark chartist-animated"
-                data={animationData}
-                options={animatonOptions}
-                type="Line"
-              />
-            </div>
-            <div className="cui__utils__heading">
-              <strong>Performance vs SP500</strong>
-            </div>
-            <div className="mb-5">
-              <ChartistGraph
-                className="height-300 chart-css-animations chartist-theme-dark chartist-animated"
-                data={animationData}
-                options={animatonOptions}
-                type="Line"
-              />
-            </div>
-            <div className="cui__utils__heading">
-              <strong>Performance vs Top Funds</strong>
-            </div>
-            <div className="mb-5">
-              <ChartistGraph
-                className="height-300 chart-smil-animations"
-                data={smilData}
-                options={smilOptions}
-                type="Line"
-                listener={smilListener}
-              />
-            </div>
-
-
+            <strong>Order Books</strong>
           </div>
           <div className="cui__utils__heading">
             <strong>Order Booketh</strong>
@@ -678,11 +450,9 @@ const DashboardCrypto = () => {
                               <Select.Option value="immediate">Immediate or Cancel</Select.Option>
                             </Select>
                           </Form.Item>
-
-                          <Button className="btn btn-success" style={{ width: '100%' }} onClick={showConfirm}>Buy AAPL
-                          
-                          </Button>
-                          
+                          <div className="btn btn-success" style={{ width: '100%' }}>
+                            <strong>BUY BTC</strong>
+                          </div>
                           <div className="my-3 text-center">
                             <div>
                               <strong>Available Balance</strong>

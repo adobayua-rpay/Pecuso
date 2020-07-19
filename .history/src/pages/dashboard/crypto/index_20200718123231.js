@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Spin, Alert, Table, Select, Tag, Radio, Input, Affix, Form, Rate,Modal,Button,Typography,} from 'antd'
+import { Spin, Alert, Table, Select, Tag, Radio, Input, Affix, Form, Rate,Modal,Button,Typography  } from 'antd'
 import { Helmet } from 'react-helmet'
 import ChartistGraph from 'react-chartist'
 import ChartistTooltip from 'chartist-plugin-tooltips-updated'
@@ -10,7 +10,7 @@ import getData from './TradeChart/utils'
 import styles from './style.module.scss'
 import { myOpenOrdersData, marketHistoryData, orderBookBuy, orderBookSell } from './data.json'
 
-const { Title, Text,} = Typography;
+const { Title } = Typography;
 const DashboardCrypto = () => {
 
   const [myOpenOrdersLoading, setMyOpenOrdersLoading] = useState(false)
@@ -552,31 +552,23 @@ const DashboardCrypto = () => {
           <div className="cui__utils__heading">
             <strong>Portfolio Sentiments</strong>
           </div>
-          <div className="row mb-3">
-          
-            <div className="card mb-3" style={{width: 290, height:80, marginLeft:50, backgroundColor:"#00acee"}}>
-              <Title level={4} style={{marginLeft:15, size:'5', color:'#fffbe6'}}>Twitter</Title>
-              <UpCircleTwoTone twoToneColor="#01A690" style={{marginLeft:225, marginTop:-35, width:40, fontSize:'22px'}} />
-              <Text type="primary" style={{marginLeft:175, marginTop:-23,  fontSize:'15px', color:'#fffbe6'}}>2.86%</Text>
-              <Text type="primary" style={{marginLeft:175, marginTop:5,  fontSize:'15px', color:'#fffbe6'}}>Sentiment Score</Text>
-              <Text type="primary" style={{marginLeft:15, marginTop:-23,  fontSize:'15px', color:'#fffbe6'}}>$37.98</Text>
+          <div className="row mb-3" style={{backgroundColor:"#000000"}}>
+          <span className={styles.listCurrency}>
+              <span>MSFT</span>
+                183.20
+            </span>
+            <div className="card mb-3" style={{width: 320, height:180, marginLeft:150, backgroundColor:"#00acee"}}>
+              <Title level={4} style={{marginLeft:85, color:'#fffbe6'}}>Twitter</Title>
+              <UpCircleTwoTone twoToneColor="#01A690" style={{marginLeft:5, width:40, fontSize:'32px'}} />
             </div>
-            <div className="card mb-3" style={{width: 290, height:80, marginLeft:50, backgroundColor:"#3b5998"}}>
-              <Title level={4} style={{marginLeft:15, size:'5', color:'#fffbe6'}}>Facebook</Title>
-              <UpCircleTwoTone twoToneColor="#01A690" style={{marginLeft:225, marginTop:-35, width:40, fontSize:'22px'}} />
-              <Text type="primary" style={{marginLeft:175, marginTop:-23,  fontSize:'15px', color:'#fffbe6'}}>2.86%</Text>
-              <Text type="primary" style={{marginLeft:175, marginTop:5,  fontSize:'15px', color:'#fffbe6'}}>Sentiment Score</Text>
-              <Text type="primary" style={{marginLeft:15, marginTop:-23,  fontSize:'15px', color:'#fffbe6'}}>$37.98</Text>
-
+            <div className="card mb-3" style={{width: 320, height:180, marginLeft:150, backgroundColor:"#3b5998"}}>
+              <Title level={4} style={{marginLeft:85, color:'#fffbe6'}}>Facebook</Title>
             </div>
-            <div className="card mb-3" style={{width: 290, height:80, marginLeft:50, backgroundColor:"#00acee"}}>
+            <div className="card mb-3" style={{width: 320, height:180, marginLeft:150, backgroundColor:"#00acee"}}>
               <Title level={4} style={{marginLeft:85, color:'#fffbe6'}}>News</Title>
             </div>
-            <div className="card mb-3" style={{width: 290, height:80, marginLeft:50, backgroundColor:"#d9d9d9"}}>
-              <Title level={4} style={{marginLeft:85, color:'#fffbe6'}}>Reddit</Title>
-            </div>
           </div>
-          
+
           <div className="cui__utils__heading">
             <strong>Portfolio Charts</strong>
           </div>

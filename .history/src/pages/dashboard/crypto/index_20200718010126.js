@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from 'react'
-import { Spin, Alert, Table, Select, Tag, Radio, Input, Affix, Form, Rate,Modal,Button,Typography,} from 'antd'
+import { Spin, Alert, Table, Select, Tag, Radio, Input, Affix, Form, Rate,   } from 'antd'
 import { Helmet } from 'react-helmet'
 import ChartistGraph from 'react-chartist'
 import ChartistTooltip from 'chartist-plugin-tooltips-updated'
 import AntdMenuExample from 'pages/ui-kits/antd/examples/menu'
-import { ExclamationCircleOutlined,UpCircleTwoTone  } from '@ant-design/icons';
 import TradeChart from './TradeChart'
 import getData from './TradeChart/utils'
 import styles from './style.module.scss'
 import { myOpenOrdersData, marketHistoryData, orderBookBuy, orderBookSell } from './data.json'
 
-const { Title, Text,} = Typography;
+
+
 const DashboardCrypto = () => {
 
   const [myOpenOrdersLoading, setMyOpenOrdersLoading] = useState(false)
@@ -35,22 +35,6 @@ const DashboardCrypto = () => {
       [10, 9, 8, 6.5, 6.8, 6, 5.4, 5.3, 4.5, 4.4, 3, 2.8],
     ],
   }
-
-  function showConfirm() {
-    confirm({
-      title: 'Are you sure you want to purchase 25 shares of Apple??',
-      icon: <ExclamationCircleOutlined />,
-      content: 'Apple Price : $398.21',
-      onOk() {
-        console.log('OK');
-      },
-      onCancel() {
-        console.log('Cancel');
-      },
-    });
-  }
-
-  const { confirm } = Modal
 
   const smilData = {
     labels: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
@@ -492,7 +476,7 @@ const DashboardCrypto = () => {
               <Rate defaultValue={3} />
             </div>
             <h5 className="mb-3">
-              <strong>Quick Tools</strong>
+              <strong>Vertical</strong>
             </h5>
             <div className="card">
               <AntdMenuExample />
@@ -533,8 +517,8 @@ const DashboardCrypto = () => {
                 Expected Earnings (Tomorrow)
               </div>
             </div>
-            <div className="card .col-md1" style={{width: 300, marginLeft:50, backgroundColor:"#ff6f69"}}>
-              <div className="fnt-size-36 font-weight-bold text-dark mb-n2" style={{ height: 45, marginLeft:120, color:"#ffa39e" }}>
+            <div className="card .col-md1" style={{width: 300, marginLeft:80, backgroundColor:"#ff6f69"}}>
+              <div className="fnt-size-36 font-weight-bold text-dark mb-n2" style={{ height: 45, marginLeft:120, color:"#6e7f80" }}>
                 -$86,081
               </div>
               <div className="text-upercase" style={{marginLeft:70}}>
@@ -549,33 +533,6 @@ const DashboardCrypto = () => {
 
           
             
-          <div className="cui__utils__heading">
-            <strong>Portfolio Sentiments</strong>
-          </div>
-          <div className="row mb-3">
-          
-            <div className="card mb-3" style={{width: 290, height:80, marginLeft:50, backgroundColor:"#00acee"}}>
-              <Title level={4} style={{marginLeft:15, size:'5', color:'#fffbe6'}}>Twitter</Title>
-              <UpCircleTwoTone twoToneColor="#01A690" style={{marginLeft:225, marginTop:-35, width:40, fontSize:'22px'}} />
-              <Text type="primary" style={{marginLeft:175, marginTop:-23,  fontSize:'15px', color:'#fffbe6'}}>2.86%</Text>
-              <Text type="primary" style={{marginLeft:175, marginTop:5,  fontSize:'15px', color:'#fffbe6'}}>Sentiment Score</Text>
-              <Text type="primary" style={{marginLeft:15, marginTop:-23,  fontSize:'15px', color:'#fffbe6'}}>$37.98</Text>
-            </div>
-            <div className="card mb-3" style={{width: 290, height:80, marginLeft:50, backgroundColor:"#3b5998"}}>
-              <Title level={4} style={{marginLeft:15, size:'5', color:'#fffbe6'}}>Facebook</Title>
-              <UpCircleTwoTone twoToneColor="#01A690" style={{marginLeft:225, marginTop:-35, width:40, fontSize:'22px'}} />
-              <Text type="primary" style={{marginLeft:175, marginTop:-23,  fontSize:'15px', color:'#fffbe6'}}>2.86%</Text>
-              <Text type="primary" style={{marginLeft:175, marginTop:5,  fontSize:'15px', color:'#fffbe6'}}>Sentiment Score</Text>
-              <Text type="primary" style={{marginLeft:15, marginTop:-23,  fontSize:'15px', color:'#fffbe6'}}>$37.98</Text>
-
-            </div>
-            <div className="card mb-3" style={{width: 290, height:80, marginLeft:50, backgroundColor:"#00acee"}}>
-              <Title level={4} style={{marginLeft:85, color:'#fffbe6'}}>News</Title>
-            </div>
-            <div className="card mb-3" style={{width: 290, height:80, marginLeft:50, backgroundColor:"#d9d9d9"}}>
-              <Title level={4} style={{marginLeft:85, color:'#fffbe6'}}>Reddit</Title>
-            </div>
-          </div>
           
           <div className="cui__utils__heading">
             <strong>Portfolio Charts</strong>
@@ -678,11 +635,9 @@ const DashboardCrypto = () => {
                               <Select.Option value="immediate">Immediate or Cancel</Select.Option>
                             </Select>
                           </Form.Item>
-
-                          <Button className="btn btn-success" style={{ width: '100%' }} onClick={showConfirm}>Buy AAPL
-                          
-                          </Button>
-                          
+                          <div className="btn btn-success" style={{ width: '100%' }}>
+                            <strong>BUY BTC</strong>
+                          </div>
                           <div className="my-3 text-center">
                             <div>
                               <strong>Available Balance</strong>

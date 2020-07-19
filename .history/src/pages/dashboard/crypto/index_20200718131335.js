@@ -563,11 +563,6 @@ const DashboardCrypto = () => {
             </div>
             <div className="card mb-3" style={{width: 290, height:80, marginLeft:50, backgroundColor:"#3b5998"}}>
               <Title level={4} style={{marginLeft:15, size:'5', color:'#fffbe6'}}>Facebook</Title>
-              <UpCircleTwoTone twoToneColor="#01A690" style={{marginLeft:225, marginTop:-35, width:40, fontSize:'22px'}} />
-              <Text type="primary" style={{marginLeft:175, marginTop:-23,  fontSize:'15px', color:'#fffbe6'}}>2.86%</Text>
-              <Text type="primary" style={{marginLeft:175, marginTop:5,  fontSize:'15px', color:'#fffbe6'}}>Sentiment Score</Text>
-              <Text type="primary" style={{marginLeft:15, marginTop:-23,  fontSize:'15px', color:'#fffbe6'}}>$37.98</Text>
-
             </div>
             <div className="card mb-3" style={{width: 290, height:80, marginLeft:50, backgroundColor:"#00acee"}}>
               <Title level={4} style={{marginLeft:85, color:'#fffbe6'}}>News</Title>

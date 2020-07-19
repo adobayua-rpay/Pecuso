@@ -552,31 +552,21 @@ const DashboardCrypto = () => {
           <div className="cui__utils__heading">
             <strong>Portfolio Sentiments</strong>
           </div>
-          <div className="row mb-3">
+          <div className="row mb-3" style={{backgroundColor:"#000000"}}>
           
             <div className="card mb-3" style={{width: 290, height:80, marginLeft:50, backgroundColor:"#00acee"}}>
               <Title level={4} style={{marginLeft:15, size:'5', color:'#fffbe6'}}>Twitter</Title>
-              <UpCircleTwoTone twoToneColor="#01A690" style={{marginLeft:225, marginTop:-35, width:40, fontSize:'22px'}} />
-              <Text type="primary" style={{marginLeft:175, marginTop:-23,  fontSize:'15px', color:'#fffbe6'}}>2.86%</Text>
-              <Text type="primary" style={{marginLeft:175, marginTop:5,  fontSize:'15px', color:'#fffbe6'}}>Sentiment Score</Text>
-              <Text type="primary" style={{marginLeft:15, marginTop:-23,  fontSize:'15px', color:'#fffbe6'}}>$37.98</Text>
+              <UpCircleTwoTone twoToneColor="#01A690" style={{marginLeft:185, marginTop:-35, width:40, fontSize:'22px'}} />
+              <Text type="primary" style={{marginLeft:125, marginTop:-25,  fontSize:'15px'}}>2.86%</Text>
             </div>
-            <div className="card mb-3" style={{width: 290, height:80, marginLeft:50, backgroundColor:"#3b5998"}}>
-              <Title level={4} style={{marginLeft:15, size:'5', color:'#fffbe6'}}>Facebook</Title>
-              <UpCircleTwoTone twoToneColor="#01A690" style={{marginLeft:225, marginTop:-35, width:40, fontSize:'22px'}} />
-              <Text type="primary" style={{marginLeft:175, marginTop:-23,  fontSize:'15px', color:'#fffbe6'}}>2.86%</Text>
-              <Text type="primary" style={{marginLeft:175, marginTop:5,  fontSize:'15px', color:'#fffbe6'}}>Sentiment Score</Text>
-              <Text type="primary" style={{marginLeft:15, marginTop:-23,  fontSize:'15px', color:'#fffbe6'}}>$37.98</Text>
-
+            <div className="card mb-3" style={{width: 320, height:180, marginLeft:150, backgroundColor:"#3b5998"}}>
+              <Title level={4} style={{marginLeft:85, color:'#fffbe6'}}>Facebook</Title>
             </div>
-            <div className="card mb-3" style={{width: 290, height:80, marginLeft:50, backgroundColor:"#00acee"}}>
+            <div className="card mb-3" style={{width: 320, height:180, marginLeft:150, backgroundColor:"#00acee"}}>
               <Title level={4} style={{marginLeft:85, color:'#fffbe6'}}>News</Title>
             </div>
-            <div className="card mb-3" style={{width: 290, height:80, marginLeft:50, backgroundColor:"#d9d9d9"}}>
-              <Title level={4} style={{marginLeft:85, color:'#fffbe6'}}>Reddit</Title>
-            </div>
           </div>
-          
+
           <div className="cui__utils__heading">
             <strong>Portfolio Charts</strong>
           </div>
