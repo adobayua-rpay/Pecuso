@@ -264,7 +264,7 @@ const DashboardGamma2 = () => {
 
 
             </CardSection>
-            <div className="card-body" style={{ width: 50, marginLeft:200, marginTop:-400 }}>
+            <div className="card-body" style={{ width: 50, marginLeft:200, marginTop:-500 }}>
               <Iframe
                 url="https://api.stockdio.com/visualization/financial/charts/v1/SingleQuote?app-key=9570C608187A4630BAAD2492DC33BB7F&symbol=TSLA&palette=Financial-Light"
                 id="myId"

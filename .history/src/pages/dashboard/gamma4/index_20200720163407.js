@@ -208,7 +208,16 @@ const DashboardGamma2 = () => {
           >
             <Meta title="$250b Club" description="$TSLA has a market cap > $250B" />
           </Card>
-
+          <div className="card-body" style={{ width: 50, }}>
+            <Iframe
+              url="https://api.stockdio.com/visualization/financial/charts/v1/SingleQuote?app-key=9570C608187A4630BAAD2492DC33BB7F&symbol=TSLA&palette=Financial-Light"
+              id="myId"
+              className="myClassname"
+              display="initial"
+              width="350"
+              height="155"
+            />
+          </div>
           <Card title="Premium Precision Alpha Price Dynamics" style={{ width: 250 }}>
             <CardSection
               expandable
@@ -264,16 +273,6 @@ const DashboardGamma2 = () => {
 
 
             </CardSection>
-            <div className="card-body" style={{ width: 50, marginLeft:200, marginTop:-400 }}>
-              <Iframe
-                url="https://api.stockdio.com/visualization/financial/charts/v1/SingleQuote?app-key=9570C608187A4630BAAD2492DC33BB7F&symbol=TSLA&palette=Financial-Light"
-                id="myId"
-                className="myClassname"
-                display="initial"
-                width="320"
-                height="145"
-              />
-            </div>
 
           
 

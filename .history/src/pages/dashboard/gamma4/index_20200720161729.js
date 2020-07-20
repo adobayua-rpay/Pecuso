@@ -208,7 +208,6 @@ const DashboardGamma2 = () => {
           >
             <Meta title="$250b Club" description="$TSLA has a market cap > $250B" />
           </Card>
-
           <Card title="Premium Precision Alpha Price Dynamics" style={{ width: 250 }}>
             <CardSection
               expandable
@@ -264,17 +263,16 @@ const DashboardGamma2 = () => {
 
 
             </CardSection>
-            <div className="card-body" style={{ width: 50, marginLeft:200, marginTop:-400 }}>
+            <div className="card-body" style={{ width: '100%', height:450 }}>
               <Iframe
-                url="https://api.stockdio.com/visualization/financial/charts/v1/SingleQuote?app-key=9570C608187A4630BAAD2492DC33BB7F&symbol=TSLA&palette=Financial-Light"
+                url="https://api.stockdio.com/visualization/financial/charts/v1/PricesChangeGroup?app-key=9570C608187A4630BAAD2492DC33BB7F&symbols=TSLA;GM;G;HMC;TM&indices=SPX&days=365&showLastPrice=true&tooltipsStyle=TopLegendPermanent&palette=Financial-Light&title=Preferred%20Stocks%20%26%20Indices%20at%20a%20Glance&width=1000px&height=500px"
                 id="myId"
                 className="myClassname"
                 display="initial"
-                width="320"
-                height="145"
+                width="100%"
+                height="355"
               />
             </div>
-
           
 
           </Card>
