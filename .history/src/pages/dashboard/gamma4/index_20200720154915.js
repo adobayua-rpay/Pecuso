@@ -340,7 +340,7 @@ const DashboardGamma2 = () => {
           </div>
 
 
-          <div className="card-body" style={{ width: '100%', height:450 }}>
+          <div className="card-body" style={{ width: 900, height:450 }}>
             <Iframe
               url="https://api.stockdio.com/visualization/financial/charts/v1/PricesChangeGroup?app-key=9570C608187A4630BAAD2492DC33BB7F&symbols=TSLA;GM;G;HMC;TM&indices=SPX&days=365&showLastPrice=true&tooltipsStyle=TopLegendPermanent&palette=Financial-Light&title=Preferred%20Stocks%20%26%20Indices%20at%20a%20Glance&width=1000px&height=500px"
               id="myId"
@@ -352,16 +352,6 @@ const DashboardGamma2 = () => {
           </div>
           <div className="cui__utils__heading mb-0">
             <strong>Price Comparison vs Competitors</strong>
-          </div>
-          <div className="card-body" style={{ width: '100%', height:450 }}>
-            <Iframe
-              url="https://api.stockdio.com/visualization/financial/charts/v1/PricesChangeGroup?app-key=9570C608187A4630BAAD2492DC33BB7F&symbols=TSLA;GM;G;HMC;TM&indices=SPX&days=365&showLastPrice=true&tooltipsStyle=TopLegendPermanent&palette=Financial-Light&title=Preferred%20Stocks%20%26%20Indices%20at%20a%20Glance&width=1000px&height=500px"
-              id="myId"
-              className="myClassname"
-              display="initial"
-              width="100%"
-              height="355"
-            />
           </div>
 
 
