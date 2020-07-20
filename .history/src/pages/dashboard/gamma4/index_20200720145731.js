@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet'
 import { Card, Menu, Dropdown} from 'antd';
 import Iframe from 'react-iframe'
 import {  CardSection,Text,Stack } from "@kiwicom/orbit-components/";
+import Drawer from 'pages/ui-kits/antd/examples/drawer/index'
 
 
 const { Meta } = Card;
@@ -266,7 +267,8 @@ const DashboardGamma2 = () => {
           
 
           </Card>
-          <div className="row card" style={{ width: '100%' }}>
+        </div>
+          <div className="card">
             <div className="card-header card-header-flex">
               <div className="d-flex flex-column justify-content-center mr-auto">
                 <div className="d-flex flex-row justify-content-center">
@@ -290,6 +292,8 @@ const DashboardGamma2 = () => {
                 Simply use the three dot stripe on the right to change what financial metric you would like to look at.
               </p>
             </div>
+          </div>
+          <div className="card">
             <div className="card-header card-header-flex">
               <div className="d-flex flex-column justify-content-center mr-auto">
                 <div className="d-flex flex-row justify-content-center">
@@ -314,8 +318,7 @@ const DashboardGamma2 = () => {
               </p>
             </div>
           </div>
-
-
+          <Drawer />
 
 
         
@@ -348,7 +351,7 @@ const DashboardGamma2 = () => {
 
     
 
-        </div>
+        
       </div>
     </div>
     

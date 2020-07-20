@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet'
 import { Card, Menu, Dropdown} from 'antd';
 import Iframe from 'react-iframe'
 import {  CardSection,Text,Stack } from "@kiwicom/orbit-components/";
+import Drawer from 'pages/ui-kits/antd/examples/drawer/index'
 
 
 const { Meta } = Card;
@@ -263,10 +264,32 @@ const DashboardGamma2 = () => {
 
 
             </CardSection>
-          
+            <div className="card border-0 bg-warning text-white" style={{ width: 100, height:200 }}>
+            <div className="card-body">
+              <div className="d-flex flex-wrap align-items-center">
+                <i className="fe fe-server font-size-50 mr-3" />
+                <div>
+                  <div className="font-size-21 font-weight-bold">Tech Pods</div>
+                  <div className="font-size-15">Total Value: $178,155</div>
+                </div>
+              </div>
+            </div>
+          </div>
 
           </Card>
-          <div className="row card" style={{ width: '100%' }}>
+          <div className="card border-0 bg-success text-white" style={{ width: 100, height:200 }}>
+            <div className="card-body">
+              <div className="d-flex flex-wrap align-items-center">
+                <i className="fe fe-server font-size-50 mr-3" />
+                <div>
+                  <div className="font-size-21 font-weight-bold">Tech Pods</div>
+                  <div className="font-size-15">Total Value: $178,155</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="card">
             <div className="card-header card-header-flex">
               <div className="d-flex flex-column justify-content-center mr-auto">
                 <div className="d-flex flex-row justify-content-center">
@@ -290,6 +313,8 @@ const DashboardGamma2 = () => {
                 Simply use the three dot stripe on the right to change what financial metric you would like to look at.
               </p>
             </div>
+          </div>
+          <div className="card">
             <div className="card-header card-header-flex">
               <div className="d-flex flex-column justify-content-center mr-auto">
                 <div className="d-flex flex-row justify-content-center">
@@ -314,8 +339,7 @@ const DashboardGamma2 = () => {
               </p>
             </div>
           </div>
-
-
+          <Drawer />
 
 
         

@@ -266,7 +266,7 @@ const DashboardGamma2 = () => {
           
 
           </Card>
-          <div className="row card" style={{ width: '100%' }}>
+          <div className="row card-body">
             <div className="card-header card-header-flex">
               <div className="d-flex flex-column justify-content-center mr-auto">
                 <div className="d-flex flex-row justify-content-center">
