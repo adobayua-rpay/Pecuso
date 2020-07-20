@@ -1,9 +1,11 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
 import { Card, Menu, Dropdown} from 'antd';
+import anychart from 'anychart'
 import Iframe from 'react-iframe'
 import {  CardSection,Text,Stack } from "@kiwicom/orbit-components/";
 import Drawer from 'pages/ui-kits/antd/examples/drawer/index'
+import Data from './microsoft.csv'
 
 
 const { Meta } = Card;
@@ -167,7 +169,6 @@ const balanceMenu = (
 
 
 
-const DashboardGamma2 = () => {
 
 
   return (
@@ -367,7 +368,7 @@ const DashboardGamma2 = () => {
 
 
           
-         
+        
 
     
 
@@ -377,7 +378,7 @@ const DashboardGamma2 = () => {
     
     
   )
-  }
+  
 
 export default DashboardGamma2
 

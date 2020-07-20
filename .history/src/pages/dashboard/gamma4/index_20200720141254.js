@@ -167,7 +167,6 @@ const balanceMenu = (
 
 
 
-const DashboardGamma2 = () => {
 
 
   return (
@@ -367,7 +366,7 @@ const DashboardGamma2 = () => {
 
 
           
-         
+        
 
     
 
@@ -377,7 +376,7 @@ const DashboardGamma2 = () => {
     
     
   )
-  }
+  
 
 export default DashboardGamma2
 
