@@ -179,37 +179,37 @@ const DashboardGamma2 = () => {
       
       
       <div className="row">
-        <div className="row card-body" style={{ width:"100%", height:"120%"}}>
+        <div className="row card-body">
           <Card
             hoverable
-            style={{ width:"15%"}}    
-            cover={<img alt="example" style={{ width:"100%"}} src="https://www.biography.com/.image/t_share/MTY2MzU3Nzk2OTM2MjMwNTkx/elon_musk_royal_society.jpg" />}
+            style={{ width:"10%"}}    
+            cover={<img alt="example" style={{ width:"10%"}} src="https://www.biography.com/.image/t_share/MTY2MzU3Nzk2OTM2MjMwNTkx/elon_musk_royal_society.jpg" />}
           >
             <Meta title="Elon Musk" description="Tesla CEO" />
           </Card>
           <Card
             hoverable
-            style={{width:"15%"}}
-            cover={<img alt="example" style={{ width:"100%" }} src="https://cdn.mos.cms.futurecdn.net/BQwukuZwwwXrg27B9Le2Q6-1200-80.png" />}
+            style={{width:"150px"}}
+            cover={<img alt="example" style={{ height: 180 }} src="https://cdn.mos.cms.futurecdn.net/BQwukuZwwwXrg27B9Le2Q6-1200-80.png" />}
           >
             <Meta title="Tesla" description="$TSLA" />
           </Card>
           <Card 
             hoverable
-            style={{width:"15%"}}
-            cover={<img alt="example" style={{ width:"100%" }} src="https://842930.smushcdn.com/1760858/wp-content/uploads/2020/06/wooden-toys-08-car.png?lossy=1&strip=1&webp=1" />}
+            style={{width:"150px"}}
+            cover={<img alt="example" style={{ height: 180 }} src="https://842930.smushcdn.com/1760858/wp-content/uploads/2020/06/wooden-toys-08-car.png?lossy=1&strip=1&webp=1" />}
           >
             <Meta title="Automotive Stock" description="Tesla is a car maker" />
           </Card>
           <Card
             hoverable
-            style={{width:"15%"}}
-            cover={<img alt="example" style={{ width:"100%" }} src="https://842930.smushcdn.com/1760858/wp-content/uploads/2020/05/boom-11-payment.png?lossy=1&strip=1&webp=1" />}
+            style={{width:"150px"}}
+            cover={<img alt="example" style={{ height: 180 }} src="https://842930.smushcdn.com/1760858/wp-content/uploads/2020/05/boom-11-payment.png?lossy=1&strip=1&webp=1" />}
           >
             <Meta title="$250b Club" description="$TSLA has a market cap > $250B" />
           </Card>
 
-          <Card title="Premium Precision Alpha Price Dynamics" style={{ width: '15%', height:'25%' }}>
+          <Card title="Premium Precision Alpha Price Dynamics" style={{ width: 250 }}>
             <CardSection
               expandable
               title="Stock Probability Up"

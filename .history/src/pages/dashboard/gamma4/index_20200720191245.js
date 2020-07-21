@@ -209,7 +209,7 @@ const DashboardGamma2 = () => {
             <Meta title="$250b Club" description="$TSLA has a market cap > $250B" />
           </Card>
 
-          <Card title="Premium Precision Alpha Price Dynamics" style={{ width: '15%', height:'25%' }}>
+          <Card title="Premium Precision Alpha Price Dynamics" style={{ width: 250 }}>
             <CardSection
               expandable
               title="Stock Probability Up"

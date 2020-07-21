@@ -179,7 +179,7 @@ const DashboardGamma2 = () => {
       
       
       <div className="row">
-        <div className="row card-body" style={{ width:"100%", height:"120%"}}>
+        <div className="row card-body" style={{ width:"100%", height:"100%"}}>
           <Card
             hoverable
             style={{ width:"15%"}}    
@@ -209,7 +209,7 @@ const DashboardGamma2 = () => {
             <Meta title="$250b Club" description="$TSLA has a market cap > $250B" />
           </Card>
 
-          <Card title="Premium Precision Alpha Price Dynamics" style={{ width: '15%', height:'25%' }}>
+          <Card title="Premium Precision Alpha Price Dynamics" style={{ width: 250 }}>
             <CardSection
               expandable
               title="Stock Probability Up"
