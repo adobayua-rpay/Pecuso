@@ -620,7 +620,7 @@ const DashboardGamma2 = () => {
           <div className="card-body" title="Quick Tools">
             <List
               className="comment-list"
-              header={`${datas.length} replies`}
+              header={`${dats.length} replies`}
               itemLayout="horizontal"
               dataSource={datas}
               renderItem={item => (
