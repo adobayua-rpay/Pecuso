@@ -1,11 +1,9 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
-import { Card, Menu, Dropdown, Button,Space, Table, Tag, Comment, Tooltip, List, Tabs} from 'antd';
+import { Card, Menu, Dropdown, Button,Space, Table, Tag, Comment, Tooltip, List} from 'antd';
 import {CardSection,Stack,Text } from "@kiwicom/orbit-components/";
 import Iframe from 'react-iframe'
 import moment from 'moment'
-
-const { TabPane } = Tabs;
 
 const faker = require('faker');
 
@@ -635,32 +633,6 @@ const DashboardGamma2 = () => {
                 </li>
     )}
             />,
-
-          </div>
-        </div>
-      </div>
-
-      <div className="card">
-        <div className="row">
-          <div className="card-body" title="Quick Tools">
-            <Tabs type="card">
-              <TabPane tab="Tab Title 2" key="1">
-                <p>Content of Tab Pane 1</p>
-                <p>Content of Tab Pane 1</p>
-                <p>Content of Tab Pane 1</p>
-              </TabPane>
-              <TabPane tab="Tab Title 2" key="2">
-                <p>Content of Tab Pane 1</p>
-                <p>Content of Tab Pane 1</p>
-                <p>Content of Tab Pane 1</p>
-              </TabPane>
-              <TabPane tab="Tab Title 3" key="3">
-                <p>Content of Tab Pane 1</p>
-                <p>Content of Tab Pane 1</p>
-                <p>Content of Tab Pane 1</p>
-              </TabPane>
-            </Tabs>
-
 
           </div>
         </div>

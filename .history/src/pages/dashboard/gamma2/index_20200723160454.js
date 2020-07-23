@@ -1,10 +1,8 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
 import { Input,Slider,Form} from 'antd'
-
 import Demo from './demo';
 import Chips from './chips';
-
 
 
 
@@ -117,13 +115,15 @@ const DashboardGamma2 = () => {
           <iframe 
             is="x-frame-bypass" 
             title="viola" 
+            scrolling="no"
             width="100%"  
             position="absolute"
             height="1300"
-            style={{position:"relative", left:0, top:0,width:'100%', height:'1000'}} 
-            src="https://www.portfoliovisualizer.com/"
+            style={{position:"relative", left:0, top:-500,width:'100%', height:'1000'}} 
+            src="https://twitter.com/home"
+
           />
-          
+
 
         </div>
       </div>

@@ -1,10 +1,8 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
 import { Input,Slider,Form} from 'antd'
-
 import Demo from './demo';
 import Chips from './chips';
-
 
 
 
@@ -113,17 +111,16 @@ const DashboardGamma2 = () => {
             </div>
           </div>
         </div>
-        <div className="card-body" overflow="hidden" style={{overflow: 'hidden', width:"100%", height:"100%"}}> 
+        <div className="card-body"> 
           <iframe 
             is="x-frame-bypass" 
+            width="100%" 
+            height="450px" 
             title="viola" 
-            width="100%"  
-            position="absolute"
-            height="1300"
-            style={{position:"relative", left:0, top:0,width:'100%', height:'1000'}} 
-            src="https://www.portfoliovisualizer.com/"
+            src="https://news.ycombinator.com/" 
+
           />
-          
+
 
         </div>
       </div>

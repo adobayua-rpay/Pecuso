@@ -1,10 +1,9 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
+import Iframe from 'react-iframe'
 import { Input,Slider,Form} from 'antd'
-
 import Demo from './demo';
 import Chips from './chips';
-
 
 
 
@@ -41,11 +40,7 @@ import Chips from './chips';
 const DashboardGamma2 = () => {
   return (
     <div>
-      <Helmet title="Portfolio Starter" script type="module" src="https://unpkg.com/x-frame-bypass" />
-      <Helmet>
-        <script type="module" src="https://unpkg.com/x-frame-bypass" />
-        <script src="https://unpkg.com/@ungap/custom-elements-builtin" />
-      </Helmet>
+      <Helmet title="Portfolio Starter" />
       <div className="cui__utils__heading">
         <strong>Get Started with your portfolio!</strong>
       </div>
@@ -113,18 +108,16 @@ const DashboardGamma2 = () => {
             </div>
           </div>
         </div>
-        <div className="card-body" overflow="hidden" style={{overflow: 'hidden', width:"100%", height:"100%"}}> 
-          <iframe 
-            is="x-frame-bypass" 
-            title="viola" 
-            width="100%"  
-            position="absolute"
-            height="1300"
-            style={{position:"relative", left:0, top:0,width:'100%', height:'1000'}} 
-            src="https://www.portfoliovisualizer.com/"
+        <div className="card-body"> 
+          <Iframe 
+            url="https://news.ycombinator.com/"
+            width="450px"
+            height="450px"
+            id="myId"
+            className="myClassname"
+            display="initial"
+            position="relative" 
           />
-          
-
         </div>
       </div>
 

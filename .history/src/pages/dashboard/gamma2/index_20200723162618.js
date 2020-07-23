@@ -1,6 +1,7 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
 import { Input,Slider,Form} from 'antd'
+import Iframe from 'react-iframe'
 
 import Demo from './demo';
 import Chips from './chips';
@@ -114,8 +115,8 @@ const DashboardGamma2 = () => {
           </div>
         </div>
         <div className="card-body" overflow="hidden" style={{overflow: 'hidden', width:"100%", height:"100%"}}> 
-          <iframe 
-            is="x-frame-bypass" 
+          <Iframe 
+            id="x-frame-bypass" 
             title="viola" 
             width="100%"  
             position="absolute"

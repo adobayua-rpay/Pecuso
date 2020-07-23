@@ -121,7 +121,7 @@ const DashboardGamma2 = () => {
             position="absolute"
             height="1300"
             style={{position:"relative", left:0, top:0,width:'100%', height:'1000'}} 
-            src="https://www.portfoliovisualizer.com/"
+            src="https://news.ycombinator.com/"
           />
           
 

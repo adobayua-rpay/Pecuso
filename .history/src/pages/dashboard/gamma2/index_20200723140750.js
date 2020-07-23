@@ -1,10 +1,8 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
 import { Input,Slider,Form} from 'antd'
-
 import Demo from './demo';
 import Chips from './chips';
-
 
 
 
@@ -113,17 +111,18 @@ const DashboardGamma2 = () => {
             </div>
           </div>
         </div>
-        <div className="card-body" overflow="hidden" style={{overflow: 'hidden', width:"100%", height:"100%"}}> 
+        <div className="card-body" style={{overflow: 'hidden', width:"100%", height:"100%"}}> 
           <iframe 
             is="x-frame-bypass" 
+            
+            
             title="viola" 
-            width="100%"  
-            position="absolute"
-            height="1300"
-            style={{position:"relative", left:0, top:0,width:'100%', height:'1000'}} 
-            src="https://www.portfoliovisualizer.com/"
+            scrolling="no"
+            style={{position:"relative", left:-200, top:300}} 
+            src="https://www.portfoliovisualizer.com/backtest-portfolio?s=y&timePeriod=4&startYear=1985&firstMonth=1&endYear=2020&lastMonth=12&calendarAligned=true&includeYTD=false&initialAmount=10000&annualOperation=0&annualAdjustment=0&inflationAdjusted=true&annualPercentage=0.0&frequency=4&rebalanceType=1&absoluteDeviation=5.0&relativeDeviation=25.0&showYield=false&reinvestDividends=true&portfolioNames=false&portfolioName1=Moderate+Portfolio&portfolioName2=Portfolio+2&portfolioName3=Portfolio+3&symbol1=AAPL&allocation1_1=12.50&symbol2=FB&allocation2_1=12.5&symbol3=TSLA&allocation3_1=12.5&symbol4=GOOGL&allocation4_1=12.5&symbol5=VTSMX&allocation5_1=12.5&symbol6=VGTSX&allocation6_1=12.5&symbol7=VBMFX&allocation7_1=12.5&symbol8=PIGLX&allocation8_1=12.5" 
+
           />
-          
+
 
         </div>
       </div>

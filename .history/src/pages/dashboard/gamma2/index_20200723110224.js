@@ -1,11 +1,8 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
+
 import { Input,Slider,Form} from 'antd'
-
 import Demo from './demo';
-import Chips from './chips';
-
-
 
 
 
@@ -41,11 +38,7 @@ import Chips from './chips';
 const DashboardGamma2 = () => {
   return (
     <div>
-      <Helmet title="Portfolio Starter" script type="module" src="https://unpkg.com/x-frame-bypass" />
-      <Helmet>
-        <script type="module" src="https://unpkg.com/x-frame-bypass" />
-        <script src="https://unpkg.com/@ungap/custom-elements-builtin" />
-      </Helmet>
+      <Helmet title="Portfolio Starter" />
       <div className="cui__utils__heading">
         <strong>Get Started with your portfolio!</strong>
       </div>
@@ -82,54 +75,11 @@ const DashboardGamma2 = () => {
           </div>
         </div>
         <div className="card-body"> 
-          <Demo 
-            width='100%'
-            marginLeft="2500"
-          />
-        </div>
-      </div>
-
-      <div className="card card-solid">
-        <div className="card-header card-header-flex">
-          <div className="d-flex flex-column justify-content-center mr-auto">
-            <div className="d-flex flex-row justify-content-center">
-              Finally select your investment themes (optional) by removing the themes you dont want considered in your portfolio.
-            </div>
+          <div className="card" style={{marginLeft: '1500'}}>
+            <Demo />
           </div>
         </div>
-        <div className="card-body"> 
-          <Chips  
-            width='100%'
-            marginLeft="2500"
-          />
-        </div>
       </div>
-
-      <div className="card card-solid">
-        <div className="card-header card-header-flex">
-          <div className="d-flex flex-column justify-content-center mr-auto">
-            <div className="d-flex flex-row justify-content-center">
-              Finally select your investment themes (optional) by removing the themes you dont want considered in your portfolio.
-            </div>
-          </div>
-        </div>
-        <div className="card-body" overflow="hidden" style={{overflow: 'hidden', width:"100%", height:"100%"}}> 
-          <iframe 
-            is="x-frame-bypass" 
-            title="viola" 
-            width="100%"  
-            position="absolute"
-            height="1300"
-            style={{position:"relative", left:0, top:0,width:'100%', height:'1000'}} 
-            src="https://www.portfoliovisualizer.com/"
-          />
-          
-
-        </div>
-      </div>
-
-
-
     </div>
     
   )

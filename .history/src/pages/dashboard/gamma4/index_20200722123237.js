@@ -598,7 +598,9 @@ const DashboardGamma2 = () => {
 
       <div className="card">
         <div className="row">
-          <div className="card-body" title="Quick Tools">
+          <div className="cui__utils__heading">
+            <strong>$TSLA</strong>
+          </div>
             <strong>Research Zone</strong>
             <Space size={small}>
               <Button type="primary">Advanced Stats</Button>
