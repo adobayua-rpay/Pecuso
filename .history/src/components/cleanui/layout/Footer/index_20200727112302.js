@@ -11,14 +11,14 @@ const Footer = () => {
           rel="noopener noreferrer"
           className={style.logo}
         >
-          SELLPIXELS
+          ADOBA YUA
           <span />
         </a>
         <br />
         <p className="mb-0">
-          Copyright © 2017-2020 Mdtk Soft |{' '}
+          Copyright © 2020 AdoTon Technologies |{' '}
           <a href="https://www.mediatec.org/privacy" target="_blank" rel="noopener noreferrer">
-            Privacy Policy
+            Adoton Technologies
           </a>
         </p>
       </div>

@@ -192,7 +192,7 @@ const MenuLeft = ({
           <div className={style.logo}>
             <img src="resources/images/logo.svg" className="mr-2" alt="Clean UI" />
             <div className={style.name}>{logo}</div>
-            {logo === 'Pecus' && <div className={style.descr}>By Adoba</div>}
+            {logo === 'Pecus' && <div className={style.descr}>By AdoTon</div>}
           </div>
         </div>
         <PerfectScrollbar>

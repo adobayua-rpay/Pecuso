@@ -16,7 +16,7 @@ const Footer = () => {
         </a>
         <br />
         <p className="mb-0">
-          Copyright © 2017-2020 EMPIRE NAME BECAUSE ITS LIT |{' '}
+          Copyright © 2020 AdoTon Technologies |{' '}
           <a href="https://www.mediatec.org/privacy" target="_blank" rel="noopener noreferrer">
             Privacy Policy
           </a>

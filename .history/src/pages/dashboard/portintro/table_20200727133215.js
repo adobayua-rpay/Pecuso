@@ -43,7 +43,7 @@ const stocks = {
   JAG:"Jagged Peak Energy Inc.", 
   LPI:"Laredo Petroleum, Inc.", 
 
-}
+  }
 
   const array =["GPRK","EQT","LPI", "JAG", "IO", "HPR", "EQT", "ERF", "EC", "ECT", "ESTE", "DO", "DVN", "DNR", "CRT", "CPG",
   "CNX", "CEO", "XEC", "CPK" ,
@@ -83,7 +83,7 @@ const data = [
     key: '1',
     name: randomItem1,
     age: 9.9,
-    address: [stocks.randomItem1]
+    address: 'Tesla Inc',
   },
   {
     key: '2',

@@ -43,17 +43,14 @@ const stocks = {
   JAG:"Jagged Peak Energy Inc.", 
   LPI:"Laredo Petroleum, Inc.", 
 
-}
+  }
 
-  const array =["GPRK","EQT","LPI", "JAG", "IO", "HPR", "EQT", "ERF", "EC", "ECT", "ESTE", "DO", "DVN", "DNR", "CRT", "CPG",
-  "CNX", "CEO", "XEC", "CPK" ,
-      ]
+  const array =["GPRK","EQT","LPI"]
   const randomItem = array[Math.floor(Math.random()*array.length)];
-  const randomItem1 = array[Math.floor(Math.random()*array.length)];
-  const randomItem2 = array[Math.floor(Math.random()*array.length)];
 
 
-
+const randomItem1 = stocks[Math.floor(Math.random()*stocks.length)];
+const randomItem2 = stocks[Math.floor(Math.random()*stocks.length)];
 // var randomItem3 = stocks[Math.floor(Math.random()*stocks.length)];
 // var randomItem4 = stocks[Math.floor(Math.random()*stocks.length)];
 // var randomItem5 = stocks[Math.floor(Math.random()*stocks.length)];
@@ -83,7 +80,7 @@ const data = [
     key: '1',
     name: randomItem1,
     age: 9.9,
-    address: [stocks.randomItem1]
+    address: 'Tesla Inc',
   },
   {
     key: '2',

@@ -1,7 +1,11 @@
 import { Table, Button, Space } from 'antd';
-import React from 'react';
+import React from 'react'
 
-const stocks = {
+const airPlaneStocks = [
+
+]
+
+var stocks = {
   AR:"Antero",
   APA:"Apache Corporation",
   BTE:"Baytex Energy Corp", 
@@ -43,35 +47,28 @@ const stocks = {
   JAG:"Jagged Peak Energy Inc.", 
   LPI:"Laredo Petroleum, Inc.", 
 
-}
-
-  const array =["GPRK","EQT","LPI", "JAG", "IO", "HPR", "EQT", "ERF", "EC", "ECT", "ESTE", "DO", "DVN", "DNR", "CRT", "CPG",
-  "CNX", "CEO", "XEC", "CPK" ,
-      ]
-  const randomItem = array[Math.floor(Math.random()*array.length)];
-  const randomItem1 = array[Math.floor(Math.random()*array.length)];
-  const randomItem2 = array[Math.floor(Math.random()*array.length)];
-
-
-
-// var randomItem3 = stocks[Math.floor(Math.random()*stocks.length)];
-// var randomItem4 = stocks[Math.floor(Math.random()*stocks.length)];
-// var randomItem5 = stocks[Math.floor(Math.random()*stocks.length)];
-// var randomItem6 = stocks[Math.floor(Math.random()*stocks.length)];
-// var randomItem7 = stocks[Math.floor(Math.random()*stocks.length)];
-// var randomItem8 = stocks[Math.floor(Math.random()*stocks.length)];
-// var randomItem9 = stocks[Math.floor(Math.random()*stocks.length)];
-// var randomItem10 = stocks[Math.floor(Math.random()*stocks.length)];
-// var randomItem11 = stocks[Math.floor(Math.random()*stocks.length)];
-// var randomItem12 = stocks[Math.floor(Math.random()*stocks.length)];
-// var randomItem13 = stocks[Math.floor(Math.random()*stocks.length)];
-// var randomItem14 = stocks[Math.floor(Math.random()*stocks.length)];
-// var randomItem15 = stocks[Math.floor(Math.random()*stocks.length)];
-// var randomItem16 = stocks[Math.floor(Math.random()*stocks.length)];
-// var randomItem17 = stocks[Math.floor(Math.random()*stocks.length)];
-// var randomItem18 = stocks[Math.floor(Math.random()*stocks.length)];
-// var randomItem19 = stocks[Math.floor(Math.random()*stocks.length)];
-// var randomItem20 = stocks[Math.floor(Math.random()*stocks.length)];
+  }
+  
+var randomItem1 = stocks[Math.floor(Math.random()*stocks.length)];
+var randomItem2 = stocks[Math.floor(Math.random()*stocks.length)];
+var randomItem3 = stocks[Math.floor(Math.random()*stocks.length)];
+var randomItem4 = stocks[Math.floor(Math.random()*stocks.length)];
+var randomItem5 = stocks[Math.floor(Math.random()*stocks.length)];
+var randomItem6 = stocks[Math.floor(Math.random()*stocks.length)];
+var randomItem7 = stocks[Math.floor(Math.random()*stocks.length)];
+var randomItem8 = stocks[Math.floor(Math.random()*stocks.length)];
+var randomItem9 = stocks[Math.floor(Math.random()*stocks.length)];
+var randomItem10 = stocks[Math.floor(Math.random()*stocks.length)];
+var randomItem11 = stocks[Math.floor(Math.random()*stocks.length)];
+var randomItem12 = stocks[Math.floor(Math.random()*stocks.length)];
+var randomItem13 = stocks[Math.floor(Math.random()*stocks.length)];
+var randomItem14 = stocks[Math.floor(Math.random()*stocks.length)];
+var randomItem15 = stocks[Math.floor(Math.random()*stocks.length)];
+var randomItem16 = stocks[Math.floor(Math.random()*stocks.length)];
+var randomItem17 = stocks[Math.floor(Math.random()*stocks.length)];
+var randomItem18 = stocks[Math.floor(Math.random()*stocks.length)];
+var randomItem19 = stocks[Math.floor(Math.random()*stocks.length)];
+var randomItem20 = stocks[Math.floor(Math.random()*stocks.length)];
 
 
 
@@ -83,7 +80,7 @@ const data = [
     key: '1',
     name: randomItem1,
     age: 9.9,
-    address: [stocks.randomItem1]
+    address: 'Tesla Inc',
   },
   {
     key: '2',
@@ -93,7 +90,7 @@ const data = [
   },
   {
     key: '3',
-    name: randomItem,
+    name: 'F',
     age: 9.9,
     address: 'Ford Motor Company',
   },
