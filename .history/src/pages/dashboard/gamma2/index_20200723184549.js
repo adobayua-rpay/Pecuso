@@ -115,7 +115,7 @@ const DashboardGamma2 = () => {
         <div className="card-body" overflow="hidden" style={{overflow: 'hidden', width:"100%", height:"100%"}}> 
           <iframe 
             is="x-frame-bypass" 
-            src="https://www.portfoliovisualizer.com/"
+            src="https://github.com/adobayua-rpay/Pecuso"
             title="viola" 
             width="100%"  
             position="absolute"

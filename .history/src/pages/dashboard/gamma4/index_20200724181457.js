@@ -476,7 +476,7 @@ const DashboardGamma2 = () => {
           <div className="card-body" title="TSLA vs Competitors">
             <strong>Price Comparison vs Competitors</strong>
             <Iframe
-              url="www.google.com"
+              src="https://api.stockdio.com/visualization/financial/charts/v1/HistoricalPrices?app-key=9570C608187A4630BAAD2492DC33BB7F&indicators=BollingerBands(10,2.0);Stochastics(10,10);&symbol=TSLA&dividends=true&splits=true&palette=Financial-Light'"
               id="myId"
               className="myClassname"
               display="initial"

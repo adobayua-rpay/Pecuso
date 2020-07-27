@@ -115,12 +115,12 @@ const DashboardGamma2 = () => {
         <div className="card-body" overflow="hidden" style={{overflow: 'hidden', width:"100%", height:"100%"}}> 
           <iframe 
             is="x-frame-bypass" 
-            src="https://www.portfoliovisualizer.com/"
             title="viola" 
             width="100%"  
             position="absolute"
             height="1300"
             style={{position:"relative", left:0, top:0,width:'100%', height:'1000'}} 
+            src="https://www.portfoliovisualizer.com/backtest-portfolio#analysisResults"
           />
           
           

@@ -476,7 +476,7 @@ const DashboardGamma2 = () => {
           <div className="card-body" title="TSLA vs Competitors">
             <strong>Price Comparison vs Competitors</strong>
             <Iframe
-              url="www.google.com"
+              src="www.google.com"
               id="myId"
               className="myClassname"
               display="initial"

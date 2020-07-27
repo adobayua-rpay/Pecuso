@@ -9,6 +9,7 @@ import Chips from './chips';
 
 
 
+
   const formItemLayout = {
     labelCol: {
       xs: { span: 24 },
@@ -115,14 +116,13 @@ const DashboardGamma2 = () => {
         <div className="card-body" overflow="hidden" style={{overflow: 'hidden', width:"100%", height:"100%"}}> 
           <iframe 
             is="x-frame-bypass" 
-            src="https://www.portfoliovisualizer.com/"
             title="viola" 
             width="100%"  
             position="absolute"
             height="1300"
             style={{position:"relative", left:0, top:0,width:'100%', height:'1000'}} 
+            src="https://www.portfoliovisualizer.com/backtest-portfolio?s=y&timePeriod=4&startYear=1985&firstMonth=1&endYear=2020&lastMonth=12&calendarAligned=true&includeYTD=false&initialAmount=1000000&annualOperation=0&annualAdjustment=0&inflationAdjusted=true&annualPercentage=0.0&frequency=4&rebalanceType=1&absoluteDeviation=5.0&relativeDeviation=25.0&showYield=true&reinvestDividends=false&portfolioNames=false&portfolioName1=Ray+Dalio+All+Weather&portfolioName2=Portfolio+2&portfolioName3=Portfolio+3&symbol1=VTSMX&symbol2=VGSIX&symbol3=VTMGX&symbol4=VEIEX&symbol5=TLT&allocation5_1=40&symbol6=VIPSX&symbol7=VTI&allocation7_1=30&symbol8=IEF&allocation8_1=15&symbol9=DBC&allocation9_1=7.50&symbol10=GLD&allocation10_1=7.50&symbol11=AAPL&symbol12=TSLA&symbol13=AMZN"
           />
-          
           
 
         </div>
