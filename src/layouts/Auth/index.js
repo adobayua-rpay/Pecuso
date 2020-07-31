@@ -89,7 +89,7 @@ const AuthLayout = ({
               </li>
             </ul>
             <div className="text-center">
-              Copyright © 2017-2020 Mdtk Soft |{' '}
+              Copyright ©2020 Abysii Technologies |{' '}
               <a href="https://www.mediatec.org/privacy" target="_blank" rel="noopener noreferrer">
                 Privacy Policy
               </a>
