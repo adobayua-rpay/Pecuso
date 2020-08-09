@@ -1,0 +1,34 @@
+{
+  "tableData": [
+    {
+      "key": "1",
+      "name": "Microsoft",
+      "position": "Entry",
+      "office": "Technology",
+      "Symbol": "MSFT",
+      "date": "2014/06/13",
+      "Price": 553.536,
+      "salary": "+$18.06"
+    },
+    {
+      "key": "2",
+      "name": "Apple",
+      "office": "Technology",
+      "position": "Exit",
+      "Location": "Dallas",
+      "Symbol": "AAPL",
+      "date": "2014/06/13",
+      "Price": 353.536
+    },
+    {
+      "key": "3",
+      "name": "Newmont Gold Mining",
+      "position": "Entry",
+      "office": "Technology",
+      "Symbol": "MSFT",
+      "date": "2014/06/13",
+      "Price": 553.536,
+      "salary":"+$3.98"
+    }
+  ]
+}
