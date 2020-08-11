@@ -19,10 +19,10 @@ const SupportChat = ({ settings: { isSupportChatOpen }, dispatch }) => {
 
   return (
     <div className={style.chat}>
-      {/* <button onClick={toggleSupportChat} type="button" className={style.toggleButton}>
+      <button onClick={toggleSupportChat} type="button" className={style.toggleButton}>
         <i className={`${style.icon} fe fe-message-square mr-md-2`} />
         <span className="d-none d-md-inline">Support Chat</span>
-      </button> */}
+      </button>
       <div
         className={classNames(style.container, {
           [style.containerToggled]: isSupportChatOpen,

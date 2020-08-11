@@ -269,7 +269,7 @@ const Sidebar = ({
                   <Slider
                     value={leftMenuWidth}
                     min={256}
-                    max={0}
+                    max={330}
                     onChange={value => {
                       changeSetting('leftMenuWidth', value)
                     }}
