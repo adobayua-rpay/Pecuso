@@ -45,7 +45,7 @@ const Login = ({ dispatch, user, authProvider, logo }) => {
           But if you really really do want to get a sneak peek, lmk at adoba@riftpay.io and I can give you test credentials to use to login.
           <br />
           Until then, sorry you wont be able to use it, but lmk <strong>adoba@riftpay.io</strong> /{' '}
-          <strong>Bless Up</strong>
+          <strong>cleanui</strong>
         </p>
       </div>
       <div className={`card ${style.container}`}>

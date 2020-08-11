@@ -423,7 +423,7 @@ const Sidebar = ({
           </div>
         </PerfectScrollbar>
       </div>
-      {/* <Tooltip title="Settings" placement="left">
+      <Tooltip title="Settings" placement="left">
         <a
           role="button"
           tabIndex="0"
@@ -437,7 +437,7 @@ const Sidebar = ({
         >
           <i className="fe fe-settings" />
         </a>
-      </Tooltip> */}
+      </Tooltip>
       <Tooltip title="Switch Dark / Light Theme" placement="left">
         <a
           role="button"
@@ -481,7 +481,7 @@ const Sidebar = ({
           <i className="fe fe-package" />
         </a>
       </Tooltip>
-      {/* <Tooltip title="Documentation" placement="left">
+      <Tooltip title="Documentation" placement="left">
         <a
           href="https://docs.cleanuitemplate.com"
           target="_blank"
@@ -491,7 +491,7 @@ const Sidebar = ({
         >
           <i className="fe fe-book-open" />
         </a>
-      </Tooltip> */}
+      </Tooltip>
     </div>
   )
 }

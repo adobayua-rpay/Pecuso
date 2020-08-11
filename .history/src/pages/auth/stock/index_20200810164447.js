@@ -1,7 +1,3 @@
-
-    // eslint-disable-next-line
-    /* eslint-disable */
-
 import React, { Fragment } from "react";
 import CountdownComponent from "./countdownData";
 import { Container } from "reactstrap";
@@ -13,7 +9,7 @@ const ComingsoonImg = (props) => {
           <div className="comingsoon comingsoon-bgimg">
             <div className="comingsoon-inner text-center">
               <img
-                src={require("./comingsoon.png")}
+                src={require("../../assets/images/other-images/coming-soon-Logo.png")}
                 alt=""
               />
               <h5>WE ARE COMING SOON</h5>

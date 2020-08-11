@@ -13,7 +13,7 @@ const ComingsoonImg = (props) => {
           <div className="comingsoon comingsoon-bgimg">
             <div className="comingsoon-inner text-center">
               <img
-                src={require("./comingsoon.png")}
+                src={require("./comingsoon")}
                 alt=""
               />
               <h5>WE ARE COMING SOON</h5>
