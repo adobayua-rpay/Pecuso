@@ -42,7 +42,7 @@
     "antd": "^4.2.0",
     "anychart": "^8.8.0",
     "anychart-react": "^1.4.1",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "axios-react": "^1.1.7",
     "bootstrap": "^4.4.1",
     "chart.js": "^2.9.3",
